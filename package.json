@@ -1,0 +1,15 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "a tiny torrent client",
+  "main": "index.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "author": "Anubhab Patnaik",
+  "license": "MIT"
+}
