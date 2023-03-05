@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "a tiny torrent client",
   "main": "index.ts",
-  "devDependencies": {},
-  "scripts": {
-    "test": "test"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.14.6"
   },
   "dependencies": {
     "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "bdown": "node dist/index.js",
+    "dev": "tsc -w"
   },
   "author": "Anubhab Patnaik",
   "license": "MIT"
