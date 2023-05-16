@@ -3,19 +3,12 @@ import downloadMagnet from './downloadMag.js';
 
 const arg: string = process.argv[2];
 if (arg == "mag") {
-	console.log("Enter the magnet link: ");
-	process.stdin.on('data', function (data) {
-		const magnetUrl: string = data.toString().trim();
-		downloadMagnet(magnetUrl);
-	});
+	const magnetUrl: string = process.argv[3].toString().trim();
+	downloadMagnet(magnetUrl);
 }
 else if (arg == "file") {
-	console.log("Enter the file path: ");
-	process.stdin.on('data', function (data) {
-		const path: string = data.toString().trim();
-		downloadFile(path);
-	});
-
+	const filepath: string = process.argv[3].toString().trim();
+	downloadFile(filepath);
 }
 else {
 	console.log("Invalid argument: " + arg);
