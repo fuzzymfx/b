@@ -5,12 +5,11 @@
 [Introduction to BitTorrent](https://www.bittorrent.org/introduction.html)
 
 A torrent file/ magnet link usually contains the following: -
-
-`xt`: The type of the file being shared, in this case a BitTorrent info hash.
-`urn`: The namespace of the hash function used to calculate the info hash.
-`btih`: The actual info hash of the file being shared.
-`dn`: The display name of the file being shared.
-`tr`: The URL of the tracker server(s) that the client should use to find peers.
+- `xt`: The type of the file being shared, in this case a BitTorrent info hash.
+- `urn`: The namespace of the hash function used to calculate the info hash.
+- `btih`: The actual info hash of the file being shared.
+- `dn`: The display name of the file being shared.
+- `tr`: The URL of the tracker server(s) that the client should use to find peers.
 `xl`: The length of the file in bytes.
 
 , but, is not limited to the above.
