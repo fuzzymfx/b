@@ -15,3 +15,5 @@ A torrent file/ magnet link usually contains the following: -
 
 , but, is not limited to the above.
 Read more about the [magent link](https://en.wikipedia.org/wiki/Magnet_URI_scheme).
+
+A magnet link is encoded in bencode(pronounced Bee-encode) format, which is a way to serialize data structures. Read more about [bencode](https://en.wikipedia.org/wiki/Bencode).

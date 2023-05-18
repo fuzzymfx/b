@@ -1,4 +1,4 @@
-class Torrent {
+export class Torrent {
     public readonly infoHash: string;
     public readonly displayName?: string;
     public readonly trackers?: string[];
