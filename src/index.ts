@@ -1,15 +1,18 @@
 import downloadFile from './downloadFile.js';
 import downloadMagnet from './downloadMag.js';
+import { existsSync } from 'fs';
 
 const arg: string = process.argv[2];
-if (arg == "mag") {
-	const magnetUrl: string = process.argv[3].toString().trim();
-	downloadMagnet(magnetUrl);
-}
-else if (arg == "file") {
-	const filepath: string = process.argv[3].toString().trim();
-	downloadFile(filepath);
+
+if (arg.startsWith('magnet')) {
+	// downloadMagnet(arg);
+	console.log('magnet link detected')
+
 }
 else {
-	console.log("Invalid argument: " + arg);
+	if (existsSync(arg)) {
+		downloadFile(arg);
+	}
+	else if(!arg) throw new Error('No torrent file provided')
+	else throw new Error('Invalid torrent file provided')
 }
