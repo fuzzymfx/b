@@ -10,7 +10,7 @@ A torrent file/ magnet link usually contains the following: -
 - `btih`: The actual info hash of the file being shared.
 - `dn`: The display name of the file being shared.
 - `tr`: The URL of the tracker server(s) that the client should use to find peers.
-`xl`: The length of the file in bytes.
+- `xl`: The length of the file in bytes.
 
 , but, is not limited to the above.
 Read more about the [magent link](https://en.wikipedia.org/wiki/Magnet_URI_scheme).

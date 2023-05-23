@@ -1,0 +1,1 @@
+// future implementation of decode function - decode a string of binary data into a string of characters ( benecode format )
